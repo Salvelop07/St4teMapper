@@ -1,7 +1,7 @@
 <?php
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,8 +17,8 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */ 
 
-namespace StateMapper;
-use \StateMapper\BulletinController as BulletinController;
+namespace St4teMapper;
+use \St4teMapper\BulletinController as BulletinController;
 
 if (!defined('BASE_PATH'))
 	die();
@@ -146,7 +146,7 @@ class MainController {
 				if (!IS_CLI)
 					return false;
 				require APP_PATH.'/helpers/'.$smap['page'].'.php';
-				return call_user_func('\\StateMapper\\'.$smap['page']);
+				return call_user_func('\\St4teMapper\\'.$smap['page']);
 			
 			case 'spiders':
 				if (!IS_CLI)

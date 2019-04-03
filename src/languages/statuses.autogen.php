@@ -1,9 +1,9 @@
 <?php
 /*
- * StateMapper: Worldwide, collaborative, public data reviewing and monitoring tool.
+ * St4teMapper: Worldwide, collaborative, public data reviewing and monitoring tool.
  * Redesign of Kaos155 <https://github.com/ingobernable/Kaos155>, by the same Ingoberlab team.
  * 
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by

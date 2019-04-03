@@ -1,9 +1,9 @@
 <div align="center" id="top">
-	<a href="https://github.com/StateMapper/StateMapper#top" title="Go to the project's homepage"><img src="https://github.com/StateMapper/StateMapper/blob/master/documentation/logo/logo-manuals.png" /></a><br>
+	<a href="https://github.com/Salvelop07/St4teMapper#top" title="Go to the project's homepage"><img src="https://github.com/Salvelop07/St4teMapper/blob/master/documentation/logo/logo-manuals.png" /></a><br>
 	<h3 align="center">SCHEMAS DOCUMENTATION</h3>
 </div>
 
-*[&larr; Project's homepage](https://github.com/StateMapper/StateMapper#top)*
+*[&larr; Project's homepage](https://github.com/Salvelop07/St4teMapper#top)*
 
 -----
 
@@ -92,24 +92,24 @@ Status are sorted by ```type``` and ```action``` through the ```schemas/statuses
 
 | | Type | Action | Meaning | Required attributes |
 | ---- | ---- | ----- | ----- | ---- |
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/birthday-cake.ico" valign="middle" /> | ```capital``` | ```new``` | company foundation | amount: the amount of capital | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/money.ico" valign="middle" /> | ```capital``` | ```increase``` | capital increase | amount: the amount of increase | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/credit-card.ico" valign="middle" /> | ```fund``` | ```increase``` | company funding | amount: the funding amount | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/user-circle-o.ico" valign="middle" /> | ```owner``` | ```update``` | new owner | target: the owner's name | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/user-plus.ico" valign="middle" /> | ```administrator``` | ```start``` | new administrator | target: the administrator's name | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/user.ico" valign="middle" /> | ```administrator``` | ```keep``` | reelected administrator | target: the administrator's name | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/user-times.ico" valign="middle" /> | ```administrator``` | ```end``` | no longer administrator | target: the administrator's name | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/user-plus.ico" valign="middle" /> | ```president``` | ```start``` | new president | target: the president's name | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/user-plus.ico" valign="middle" /> | ```counselor``` | ```start``` | new counselor | target: the counselor's name | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/file-o.ico" valign="middle" /> | ```object``` | ```update``` | new social purpose | note: the social purpose | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/map-marker.ico" valign="middle" /> | ```location``` | ```update``` | new location | note: the location string | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/exchange.ico" valign="middle" /> | ```name``` | ```update``` | name change | target: the new entity name | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/times.ico" valign="middle" /> | ```name``` | ```end``` | company dissolution |  | 
-| <img src="https://statemapper.net/src/addons/fontawesome_favicons/shopping-cart.ico" valign="middle" /> | ```absorb``` | ```new``` | company absorption | target: the absorbed company | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/birthday-cake.ico" valign="middle" /> | ```capital``` | ```new``` | company foundation | amount: the amount of capital | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/money.ico" valign="middle" /> | ```capital``` | ```increase``` | capital increase | amount: the amount of increase | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/credit-card.ico" valign="middle" /> | ```fund``` | ```increase``` | company funding | amount: the funding amount | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/user-circle-o.ico" valign="middle" /> | ```owner``` | ```update``` | new owner | target: the owner's name | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/user-plus.ico" valign="middle" /> | ```administrator``` | ```start``` | new administrator | target: the administrator's name | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/user.ico" valign="middle" /> | ```administrator``` | ```keep``` | reelected administrator | target: the administrator's name | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/user-times.ico" valign="middle" /> | ```administrator``` | ```end``` | no longer administrator | target: the administrator's name | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/user-plus.ico" valign="middle" /> | ```president``` | ```start``` | new president | target: the president's name | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/user-plus.ico" valign="middle" /> | ```counselor``` | ```start``` | new counselor | target: the counselor's name | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/file-o.ico" valign="middle" /> | ```object``` | ```update``` | new social purpose | note: the social purpose | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/map-marker.ico" valign="middle" /> | ```location``` | ```update``` | new location | note: the location string | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/exchange.ico" valign="middle" /> | ```name``` | ```update``` | name change | target: the new entity name | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/times.ico" valign="middle" /> | ```name``` | ```end``` | company dissolution |  | 
+| <img src="https://github.com/Salvelop07/St4teMapper/tree/master/src/addons/fontawesome_favicons/shopping-cart.ico" valign="middle" /> | ```absorb``` | ```new``` | company absorption | target: the absorbed company | 
 
 
 
 
 -----
 
-*[&larr; Project's homepage](https://github.com/StateMapper/StateMapper#top) · Copyright &copy; 2017-2018 [StateMapper.net](https://statemapper.net) · Licensed under [GNU AGPLv3](../../LICENSE) · [&uarr; top](#top)* <img src="[![Bitbucket issues](https://img.shields.io/bitbucket/issues/atlassian/python-bitbucket.svg?style=social" align="right" /> <a href="https://statemapper.net" target="_blank"><img src="http://hits.dwyl.com/StateMapper/StateMapper.svg?style=flat-square" align="right" /></a>
+*[&larr; Project's homepage](https://github.com/Salvelop07/St4teMapper#top) · Copyright &copy; 2017-2018 [Salvador.h](https://github.com/Salvelop07/St4teMapper/tree/master) · Licensed under [GNU AGPLv3](../../LICENSE) · [&uarr; top](#top)* <img src="[![Bitbucket issues](https://img.shields.io/bitbucket/issues/atlassian/python-bitbucket.svg?style=social" align="right" /> <a href="https://github.com/Salvelop07/St4teMapper/tree/master" target="_blank"><img src="http://hits.dwyl.com/StateMapper/StateMapper.svg?style=flat-square" align="right" /></a>

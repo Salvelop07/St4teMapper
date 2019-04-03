@@ -1,7 +1,7 @@
 <?php
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,7 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */ 
 
-namespace StateMapper;
+namespace St4teMapper;
  
 if (!defined('BASE_PATH'))
 	die();
@@ -28,10 +28,10 @@ function get_license($short = false){
 }
 
 function get_disclaimer($comment_style = null){
-	$d = 'StateMapper: '.get_slogan().'.
+	$d = 'St4teMapper: '.get_slogan().'.
 Redesign of Kaos155 <https://github.com/ingobernable/Kaos155>, by the same Ingoberlab team.
 
-Copyright (C) '.get_copyright_range().'  StateMapper.net <statemapper@riseup.net>
+Copyright (C) '.get_copyright_range().'  Salvador.h <salvador.h.1007@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by

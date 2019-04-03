@@ -1,9 +1,9 @@
 <div align="center" id="top">
-	<a href="https://github.com/StateMapper/StateMapper#top" title="Go to the project's homepage"><img src="https://github.com/StateMapper/StateMapper/blob/master/documentation/logo/logo-manuals.png" /></a><br>
+	<a href="https://github.com/Salvelop07/St4teMapper#top" title="Go to the project's homepage"><img src="https://github.com/Salvelop07/St4teMapper/blob/master/documentation/logo/logo-manuals.png" /></a><br>
 	<h3 align="center">TRANSLATION GUIDE</h3>
 </div>
 
-*[&larr; Project's homepage](https://github.com/StateMapper/StateMapper#top)*
+*[&larr; Project's homepage](https://github.com/Salvelop07/St4teMapper#top)*
 
 -----
 
@@ -21,7 +21,7 @@ If you consider contributing to this project, we highly recommend you read and f
 
 ## Configuration:
 
-*All commands below must be entered from what's going to be your StateMapper's local folder.*
+*All commands below must be entered from what's going to be your St4teMapper's local folder.*
 
 1. If you haven't installed PoEdit yet, install it now:
    ```
@@ -31,7 +31,7 @@ If you consider contributing to this project, we highly recommend you read and f
 2. If you haven't downloaded the project's files yet, download them now:
    ```
    sudo apt-get install git
-   git clone github.com/StateMapper/StateMapper . # don't forget the final dot!
+   git clone github.com/Salvelop07/St4teMapper . # don't forget the final dot!
    ```
    
 3. To add a new language, copy the ```es_ES``` translation folder as follows:
@@ -42,7 +42,7 @@ If you consider contributing to this project, we highly recommend you read and f
 
 ## Translation instructions:
 
-*All commands below must be entered from your StateMapper's local folder.*
+*All commands below must be entered from your St4teMapper's local folder.*
 
 1. To start PoEdit, enter: ```poedit src/languages/xx_YY/LC_MESSAGES/smap.po```
 
@@ -68,4 +68,4 @@ If you consider contributing to this project, we highly recommend you read and f
 
 -----
 
-*[&larr; Project's homepage](https://github.com/StateMapper/StateMapper#top) · Copyright &copy; 2017-2018 [StateMapper.net](https://statemapper.net) · Licensed under [GNU AGPLv3](../../LICENSE) · [&uarr; top](#top)* <img src="[![Bitbucket issues](https://img.shields.io/bitbucket/issues/atlassian/python-bitbucket.svg?style=social" align="right" /> <a href="https://statemapper.net" target="_blank"><img src="http://hits.dwyl.com/StateMapper/StateMapper.svg?style=flat-square" align="right" /></a>
+*[&larr; Project's homepage](https://github.com/Salvelop07/St4teMapper#top) · Copyright &copy; 2017-2018 [Salvador.h](https://github.com/Salvelop07/St4teMapper/tree/master) · Licensed under [GNU AGPLv3](../../LICENSE) · [&uarr; top](#top)* <img src="[![Bitbucket issues](https://img.shields.io/bitbucket/issues/atlassian/python-bitbucket.svg?style=social" align="right" /> <a href="https://github.com/Salvelop07/St4teMapper/tree/master" target="_blank"><img src="http://hits.dwyl.com/StateMapper/StateMapper.svg?style=flat-square" align="right" /></a>

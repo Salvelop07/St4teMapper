@@ -1,9 +1,9 @@
 <div align="center" id="top">
-	<a href="https://github.com/StateMapper/StateMapper#top" title="Go to the project's homepage"><img src="https://github.com/StateMapper/StateMapper/blob/master/documentation/logo/logo-manuals.png" /></a><br>
+	<a href="https://github.com/Salvelop07/St4teMapper#top" title="Go to the project's homepage"><img src="https://github.com/Salvelop07/St4teMapper/blob/master/documentation/logo/logo-manuals.png" /></a><br>
 	<h3 align="center">HELPER FUNCTIONS</h3>
 </div>
 
-*[&larr; Project's homepage](https://github.com/StateMapper/StateMapper#top)*
+*[&larr; Project's homepage](https://github.com/Salvelop07/St4teMapper#top)*
 
 -----
 
@@ -63,4 +63,4 @@ Helpers function are files holding all sorts of useful functions for many tasks.
 
 -----
 
-*[&larr; Project's homepage](https://github.com/StateMapper/StateMapper#top) · Copyright &copy; 2017-2018 [StateMapper.net](https://statemapper.net) · Licensed under [GNU AGPLv3](../../LICENSE) · [&uarr; top](#top)* <img src="[![Bitbucket issues](https://img.shields.io/bitbucket/issues/atlassian/python-bitbucket.svg?style=social" align="right" /> <a href="https://statemapper.net" target="_blank"><img src="http://hits.dwyl.com/StateMapper/StateMapper.svg?style=flat-square" align="right" /></a>
+*[&larr; Project's homepage](https://github.com/Salvelop07/St4teMapper#top) · Copyright &copy; 2017-2018 [Salvador.h](https://github.com/Salvelop07/St4teMapper/tree/master) · Licensed under [GNU AGPLv3](../../LICENSE) · [&uarr; top](#top)* <img src="[![Bitbucket issues](https://img.shields.io/bitbucket/issues/atlassian/python-bitbucket.svg?style=social" align="right" /> <a href="https://github.com/Salvelop07/St4teMapper/tree/master" target="_blank"><img src="http://hits.dwyl.com/StateMapper/StateMapper.svg?style=flat-square" align="right" /></a>

@@ -1,7 +1,7 @@
 <?php
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,7 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */ 
 
-namespace StateMapper; 
+namespace St4teMapper; 
 	
 if (!defined('BASE_PATH'))
 	die();
@@ -39,7 +39,7 @@ function add_action($action, $cb = null, $priority = 0){
 	}
 
 	if (is_string($cb))
-		$cb = '\\StateMapper\\'.$cb;
+		$cb = '\\St4teMapper\\'.$cb;
 
 	$actions[$action][$priority][] = $cb;
 }
@@ -61,7 +61,7 @@ function add_filter($name, $cb = null, $priority = 0, $args_count = null){
 		if (!isset($cbs[$name][$priority]))
 			$cbs[$name][$priority] = array();
 		
-		$cbs[$name][$priority][] = array(is_string($cb) ? '\\StateMapper\\'.$cb : $cb, $args_count);
+		$cbs[$name][$priority][] = array(is_string($cb) ? '\\St4teMapper\\'.$cb : $cb, $args_count);
 	} 
 	return $cbs;
 }

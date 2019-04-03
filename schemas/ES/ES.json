@@ -423,7 +423,7 @@
 	ambassadors: [
 		{
 			name: "Kaos155 hacker team",
-			users: ["statemapper"],
+			users: ["St4teMapper"],
 			nodes: ["IPFS_hash_x0123456789"] // IPNS addresses
 		}
 	]

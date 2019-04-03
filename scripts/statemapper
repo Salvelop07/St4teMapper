@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
-# Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+# St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+# Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -17,7 +17,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
  
 
-# MAIN STATEMAPPER BASH SCRIPT
+# MAIN St4teMapper BASH SCRIPT
 
 # nice levels for this script (the higher, the less priority). do not touch this if you don't know what it is about.
 IONICE=3
@@ -140,9 +140,9 @@ then
 	# daemonizing
 	DAEMON_CMD="$2"
 	
-	if [ -f "$BASE_DIR/.statemapper.lock" ]
+	if [ -f "$BASE_DIR/.St4teMapper.lock" ]
 	then
-		PID=$(cat $BASE_DIR/.statemapper.lock)
+		PID=$(cat $BASE_DIR/.St4teMapper.lock)
 		if [ "$PID" != "" ]
 		then
 			if ps -p "$PID" > /dev/null 2>&1
@@ -150,7 +150,7 @@ then
 				# print the daemon status
 				if [ "$DAEMON_CMD" = "status" ]
 				then
-					echo "StateMapper daemon running with PID $PID"
+					echo "St4teMapper daemon running with PID $PID"
 					end 0
 				fi
 				
@@ -158,8 +158,8 @@ then
 				if [ "$DAEMON_CMD" = "kill" ]
 				then
 					sudo kill -9 "$PID" 
-					rm "$BASE_DIR/.statemapper.lock"
-					echo "StateMapper daemon killed"
+					rm "$BASE_DIR/.St4teMapper.lock"
+					echo "St4teMapper daemon killed"
 					end 0
 				fi
 				
@@ -169,10 +169,10 @@ then
 					sudo su - $APACHE_USER -s /bin/bash -c "$BASE_CMD daemon stop" 2> /dev/null
 					if [ $? -eq 0 ]
 					then
-						rm "$BASE_DIR/.statemapper.lock"
-						echo "StateMapper daemon stopped"
+						rm "$BASE_DIR/.St4teMapper.lock"
+						echo "St4teMapper daemon stopped"
 					else
-						echo "Could not stop the StateMapper daemon"
+						echo "Could not stop the St4teMapper daemon"
 					fi
 					if [ "$DAEMON_CMD" = "stop" ]
 					then
@@ -185,7 +185,7 @@ then
 				else
 					if contains "start" "$DAEMON_CMD"
 					then
-						echo "StateMapper daemon already running with PID $PID"
+						echo "St4teMapper daemon already running with PID $PID"
 						end 1
 					fi
 				fi
@@ -196,7 +196,7 @@ then
 	# daemon is not running
 	if contains "kill stop status" "$DAEMON_CMD"
 	then
-		echo "StateMapper daemon not running"
+		echo "St4teMapper daemon not running"
 		end 1
 	fi
 	
@@ -205,9 +205,9 @@ then
 		# debug, not daemonized
 		if contains "-d" "$DAEMON_CMD"
 		then
-			sudo echo "StateMapper daemon debugging.."
+			sudo echo "St4teMapper daemon debugging.."
 		else
-			sudo echo "StateMapper daemon advanced debugging.."
+			sudo echo "St4teMapper daemon advanced debugging.."
 		fi
 		#PHP_CMD="$PHP_CMD "'echo "$!"'
 		sudo su - $APACHE_USER -s /bin/bash -c "$PHP_CMD"
@@ -219,9 +219,9 @@ then
 		
 			# daemonize and print PID into .lock file
 			PHP_CMD="nohup $PHP_CMD >/dev/null 2>&1 &"' echo "$!"'
-			sudo su - $APACHE_USER -s /bin/bash -c "$PHP_CMD" > $BASE_DIR/.statemapper.lock
-			PID=$(cat $BASE_DIR/.statemapper.lock)
-			echo "StateMapper daemon started with PID $PID"
+			sudo su - $APACHE_USER -s /bin/bash -c "$PHP_CMD" > $BASE_DIR/.St4teMapper.lock
+			PID=$(cat $BASE_DIR/.St4teMapper.lock)
+			echo "St4teMapper daemon started with PID $PID"
 			
 		else
 			if [ "$DAEMON_CMD" = "" ]

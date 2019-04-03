@@ -1,7 +1,7 @@
 <?php
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -98,12 +98,12 @@ define('IPFS_WEB_URL', 'http://127.0.0.1:8080'); // no trailing slash
 $smapConfig['IPFS'] = array( // list of $tateMapper IPFS nodes
 	'fetchFrom' => array(
 		'/ipns/QmPxfeJeq97aK5Xr26eG1caWz4Q7qeqMhD7EiNNXWtxXFK' => array(
-			'name' => 'Main StateMapper node', // main $tateMapper IPFS node
+			'name' => 'Main St4teMapper node', // main $tateMapper IPFS node
 		),
 	),
 	'uploadTo' => array(
 		'/ipns/QmPxfeJeq97aK5Xr26eG1caWz4Q7qeqMhD7EiNNXWtxXFK' => array(
-			'name' => 'Main StateMapper node', // main $tateMapper IPFS node
+			'name' => 'Main St4teMapper node', // main $tateMapper IPFS node
 		),
 	)
 );

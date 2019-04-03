@@ -1,7 +1,7 @@
 <?php
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,7 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */ 
 
-namespace StateMapper; 
+namespace St4teMapper; 
 	
 if (!defined('BASE_PATH'))
 	die();
@@ -41,7 +41,7 @@ function get_live($live_id, $opts = array()){
 	$args = func_get_args();
 	array_unshift($args, 'live');
 	ob_start();
-	call_user_func_array('\\StateMapper\\do_action', $args);
+	call_user_func_array('\\St4teMapper\\do_action', $args);
 	return ob_get_clean();
 }
 
@@ -49,7 +49,7 @@ function smap_ajax_live($args){
 	$ret = array();
 	foreach ($args['lives'] as $live){
 		array_unshift($live['args'], $live['live_id']);
-		$ret[] = call_user_func_array('\\StateMapper\\get_live', $live['args']);
+		$ret[] = call_user_func_array('\\St4teMapper\\get_live', $live['args']);
 	}
 	return array('success' => true, 'result' => $ret);
 }

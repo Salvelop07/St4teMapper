@@ -1,7 +1,7 @@
 <?php
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,7 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */ 
  
-namespace StateMapper;
+namespace St4teMapper;
 require 'error-class.php';
 	
 if (!defined('BASE_PATH'))
@@ -56,7 +56,7 @@ function die_error($str_or_error = null, $error = null){
 }
 
 function is_error($obj){
-	return is_object($obj) && get_class($obj) == 'StateMapper\\SMapError';
+	return is_object($obj) && get_class($obj) == 'St4teMapper\\SMapError';
 }
 
 function print_inline_error($error){

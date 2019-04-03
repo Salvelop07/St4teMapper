@@ -1,7 +1,7 @@
 <?php
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,7 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */ 
 
-namespace StateMapper;
+namespace St4teMapper;
  
 if (!defined('BASE_PATH'))
 	die();
@@ -61,10 +61,10 @@ if (!empty($smap['entity'])){
 		<?php
 		
 		/* to test?..
-		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://statemapper.net/xmlrpc.php?rsd">
-		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://statemapper.net/wp-includes/wlwmanifest.xml"> 
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://github.com/Salvelop07/St4teMapper/tree/master/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://github.com/Salvelop07/St4teMapper/tree/master/wp-includes/wlwmanifest.xml"> 
 
-		<link rel="shortlink" href="https://statemapper.net/">
+		<link rel="shortlink" href="https://github.com/Salvelop07/St4teMapper/tree/master/">
 		<link rel="alternate" type="application/json+oembed" href="">
 		<link rel="alternate" type="text/xml+oembed" href="">
 		
@@ -145,7 +145,7 @@ if (!empty($smap['entity'])){
 							echo 'ERROR'.(!empty($obj['error']) ? ': '.esc_string($obj['error']) : '');
 							
 						else if ($smap['page'] == 'ambassadors')
-							echo 'Ambassadors are social collectives that host all bulletins of one country, check their integrity, and maintain translations. More information about StateMapper\'s commissions <a href="'.anonymize('https://github.com/'.SMAP_GITHUB_REPOSITORY.'#contribute').'" target="_blank">here</a>.';
+							echo 'Ambassadors are social collectives that host all bulletins of one country, check their integrity, and maintain translations. More information about St4teMapper\'s commissions <a href="'.anonymize('https://github.com/'.SMAP_GITHUB_REPOSITORY.'#contribute').'" target="_blank">here</a>.';
 								
 						else if ($smap['page'] == 'providers')
 							echo 'Below are shown all the currently available '.(!empty($smap['filters']['loc'])
@@ -225,7 +225,7 @@ if (!empty($smap['entity'])){
 									echo 'Rewinding is the step where you get to fetch all documents for as long as you can.';
 									break;
 								case 'soldiers':
-									echo 'The Soldiers are the developers that implement and maintain the bulletins\' schemas. More information about StateMapper\'s commissions <a href="'.anonymize('https://github.com/'.SMAP_GITHUB_REPOSITORY.'#contribute').'" target="_blank">here</a>.';
+									echo 'The Soldiers are the developers that implement and maintain the bulletins\' schemas. More information about St4teMapper\'s commissions <a href="'.anonymize('https://github.com/'.SMAP_GITHUB_REPOSITORY.'#contribute').'" target="_blank">here</a>.';
 									break;
 							}
 						} 

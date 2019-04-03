@@ -1,6 +1,6 @@
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -14,182 +14,178 @@
  * 
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */ 
-
+ */
 
 .header-menu-icon {
-    top: 0;
-    width: 65px;
-    text-align: center;
-    padding: 21px 0 0;
-    position: absolute;
-    cursor: pointer;
-    margin: 0;
-    right: 0;
-    z-index: 110;
-    bottom: 0;
-    font-size: 24px;
-    box-sizing: border-box;
+  top: 0;
+  width: 65px;
+  text-align: center;
+  padding: 21px 0 0;
+  position: absolute;
+  cursor: pointer;
+  margin: 0;
+  right: 0;
+  z-index: 110;
+  bottom: 0;
+  font-size: 24px;
+  box-sizing: border-box;
 }
 .header-menu-icon:hover,
 .menu-on .header-menu-icon {
-	background: rgba(255,255,255,0.6);
+  background: rgba(255, 255, 255, 0.6);
 }
 .root .header-menu-icon:hover,
 .root .menu-on .header-menu-icon {
-	background: none;
+  background: none;
 }
 
 .root .header-menu-icon {
-	border: none !important;
+  border: none !important;
 }
 .menu-menu {
-    position: absolute;
-    background: white;
-    border: 1px solid $popup-border-color;
-    padding: 4px 0;
-    left: 0;
-    z-index: 110;
-    box-sizing: border-box;
-    box-shadow: $popup-shadow;
+  position: absolute;
+  background: white;
+  border: 1px solid $popup-border-color;
+  padding: 4px 0;
+  left: 0;
+  z-index: 110;
+  box-sizing: border-box;
+  box-shadow: $popup-shadow;
 }
 
 .menu-right .menu-menu {
-	right: 0;
-	left: auto;
-    position: absolute;
+  right: 0;
+  left: auto;
+  position: absolute;
 }
 .menu-top .menu-menu {
-    bottom: 0;
+  bottom: 0;
 }
 .menu-wrap {
-	display: none;
-    position: absolute;
-    left: -10px;
-    top: 100%;
-    z-index: 111;
-    margin: -3px 8px 0 0;
+  display: none;
+  position: absolute;
+  left: -10px;
+  top: 100%;
+  z-index: 111;
+  margin: -3px 8px 0 0;
 }
 .menu-right .menu-wrap {
-	right: 0;
-	left: auto;
+  right: 0;
+  left: auto;
 }
 .menu-top .menu-wrap {
-	bottom: 100%;
-	top: auto;
+  bottom: 100%;
+  top: auto;
 }
 .menu-on .menu-wrap,
 .menu-wrap.menu-on {
-	display: inline-block;
+  display: inline-block;
 }
 .menu-inner {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+
+  li {
     padding: 0;
-    list-style: none;
+    text-align: left;
     margin: 0;
+    white-space: nowrap;
 
-	li {
-		padding: 0;
-		text-align: left;
-		margin: 0;
-		white-space: nowrap;
+    &.menu-item-cat {
+      padding: 6px 34px 6px;
+      background: #fcfcfc;
+      color: #555;
+      cursor: default;
+    }
+    &.menu-item-level-2 a {
+      border-left: 25px solid #fcfcfc;
+      padding-left: 7px;
+    }
+    &.menu-item-level-3 a {
+      border-left: 50px solid #fcfcfc;
+      padding-left: 7px;
+    }
+    &.menu-item-level-4 a {
+      border-left: 75px solid #fcfcfc;
+      padding-left: 7px;
+    }
+    &.menu-item-level-5 a {
+      border-left: 100px solid #fcfcfc;
+      padding-left: 7px;
+    }
+    &.menu-item-active a {
+      font-weight: bold;
+    }
+    a {
+      white-space: nowrap;
+      color: #555;
+      font-weight: normal;
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+      display: block;
+      text-decoration: none;
+      font-size: 16px;
+      outline: 0 !important;
 
-		&.menu-item-cat {
-			padding: 6px 34px 6px;
-			background: #fcfcfc;
-			color: #555;
-			cursor: default;
-		}
-		&.menu-item-level-2 a {
-			border-left: 25px solid #fcfcfc;
-			padding-left: 7px;
-		}
-		&.menu-item-level-3 a {
-			border-left: 50px solid #fcfcfc;
-			padding-left: 7px;
-		}
-		&.menu-item-level-4 a {
-			border-left: 75px solid #fcfcfc;
-			padding-left: 7px;
-		}
-		&.menu-item-level-5 a {
-			border-left: 100px solid #fcfcfc;
-			padding-left: 7px;
-		}
-		&.menu-item-active a {
-			font-weight: bold;
-		}
-		a {
-			white-space: nowrap;
-			color: #555;
-			font-weight: normal;
-			padding: 10px 12px;
-			border-bottom: 1px solid #eee;
-			display: block;
-			text-decoration: none;
-			font-size: 16px;
-			outline: 0 !important;
-			
-			&:hover {
-				background: #f5f5f5;
-				color: black;
-			}
-			
-			& > span {
-				display: inline-block;
-				clear: both;
-				width: 100%;
-			}
-		}
-		i {
-			margin-right: 5px;
-		}
-	}
+      &:hover {
+        background: #f5f5f5;
+        color: black;
+      }
+
+      & > span {
+        display: inline-block;
+        clear: both;
+        width: 100%;
+      }
+    }
+    i {
+      margin-right: 5px;
+    }
+  }
 }
 .full-cb-menu li {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* multi selection */
 
-
 .cb-on,
 .menu-item-active .cb-off {
-	display: none;
+  display: none;
 }
 .menu-item-active .cb-on {
-	display: inline-block;
+  display: inline-block;
 }
 
 .multisel-cb {
-	cursor: default;
+  cursor: default;
 }
 
 .tick {
-	position: relative;
-	top: 1px;
-	left: 2px;
+  position: relative;
+  top: 1px;
+  left: 2px;
 }
 
-
-@media screen and (max-width: 450px){
-	.menu-right.menu-on .menu-wrap {
-		margin: 0;
-		min-height: 100vh;
-		right: 0;
-		left: 0;
-		background: white;
-		background: rgba(0,0,0,0.3);
-	}
-	.menu-inner li a {
-		padding: 14px 12px
-	}
-	.menu-right .menu-menu {
-		right: 10px;
-		left: 10px;
-	}
-	.header-right > .header-menu.menu-on {
-		left: 0;
-		right: 0;
-	}
+@media screen and (max-width: 450px) {
+  .menu-right.menu-on .menu-wrap {
+    margin: 0;
+    min-height: 100vh;
+    right: 0;
+    left: 0;
+    background: white;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .menu-inner li a {
+    padding: 14px 12px;
+  }
+  .menu-right .menu-menu {
+    right: 10px;
+    left: 10px;
+  }
+  .header-right > .header-menu.menu-on {
+    left: 0;
+    right: 0;
+  }
 }
-

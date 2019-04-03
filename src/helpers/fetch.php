@@ -1,7 +1,7 @@
 <?php
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,7 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */ 
 
-namespace StateMapper;
+namespace St4teMapper;
 
 if (!defined('BASE_PATH'))
 	die();
@@ -378,7 +378,7 @@ function get_fetcher_cache($cacheType, $protocoleConfig, $query, $parent){
 	if (file_exists($filePath)){
 		require_once APP_PATH.'/fetcher/BulletinFetcherCache.php';
 		require_once $filePath;
-		$class = '\\StateMapper\\BulletinFetcher'.ucfirst($cacheType).'Cache';
+		$class = '\\St4teMapper\\BulletinFetcher'.ucfirst($cacheType).'Cache';
 		$fetcherCache = new $class();
 		$fetcherCache->set_config($protocoleConfig, $query, $parent);
 		return $fetcherCache;
@@ -396,7 +396,7 @@ function get_format_fetcher($format, $parent = null){
 	require_once APP_PATH.'/fetcher/BulletinFetcherFormat.php';
 	$fetcherClass = 'BulletinFetcher'.ucfirst($format);
 	$fetcherPath = APP_PATH.'/fetcher/formats/'.$fetcherClass.'.php';
-	$fetcherClass = '\\StateMapper\\'.$fetcherClass;
+	$fetcherClass = '\\St4teMapper\\'.$fetcherClass;
 	if (!is_file($fetcherPath))
 		return new SMapError('unknown fetchProcole format '.$format);
 

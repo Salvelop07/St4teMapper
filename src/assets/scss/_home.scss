@@ -1,6 +1,6 @@
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -14,18 +14,16 @@
  * 
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */ 
-
+ */
 
 body.home {
+  .header-center,
+  .header-logo {
+    display: none;
+  }
 
-	.header-center,
-	.header-logo {
-		display: none;
-	}
-
-	#main {
-		/*
+  #main {
+    /*
 		background: url(../images/bg/space.min.jpg) repeat 0 0 transparent;
 		
 		disable to improve CPU load
@@ -35,218 +33,250 @@ body.home {
 		-ms-animation:500s scroll infinite linear;
 		animation:500s scroll infinite linear;
 		*/
-	}
-	
-	.main-header {
-		background: none;
-	}
+  }
 
-	.main-header-inner,
-	.main-header,
-	.main-body,
-	#main {
-		border: none;
-		box-shadow: none;
-	}
-	
-	.bg-triangle,
-	.bg-triangle-bg {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		bottom: 0;
-	}
+  .main-header {
+    background: none;
+  }
 
-	.bg-triangle-bg {
-		background: white;
-	}
-	
-	.bg-diag-left .bg-triangle {
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
-		background: -moz-linear-gradient(-45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.95) 35%,rgba(255,255,255,0) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(-45deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.95) 35%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(135deg, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.65) 40%, rgba(255,255,255,0.95) 50%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	}
+  .main-header-inner,
+  .main-header,
+  .main-body,
+  #main {
+    border: none;
+    box-shadow: none;
+  }
 
-	.bg-diag-right .bg-triangle {
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
-		background: -moz-linear-gradient(45deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.95) 65%, rgba(255,255,255,0.2) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(45deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.95) 65%, rgba(255,255,255,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 48%, rgba(255,255,255,0.95) 50%, rgba(255,255,255,0.65) 60%, rgba(255,255,255,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	}
+  .bg-triangle,
+  .bg-triangle-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+  }
 
-	.bg-diag-left,
-	.bg-diag-right {
-		position: absolute;
-		z-index: 1;
-		top: 0;
-		bottom: 0;
-		width: 50%;
-		opacity: 1;
-	}
-	.bg-diag-left {
-		left: 0;
-	}
-	.bg-diag-right {
-		right: 0;
-	}
+  .bg-triangle-bg {
+    background: white;
+  }
 
-	.bg-stripes-wrap {
-		position: absolute;
-		z-index: 0;
-		top: 0;
-		bottom: 0;
-		overflow: hidden;
-		left: 0;
-		right: 0;
-		height: 100vh;
+  .bg-diag-left .bg-triangle {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+    background: -moz-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.95) 35%,
+      rgba(255, 255, 255, 0) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.95) 35%,
+      rgba(255, 255, 255, 0) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.65) 0%,
+      rgba(255, 255, 255, 0.65) 40%,
+      rgba(255, 255, 255, 0.95) 50%,
+      rgba(255, 255, 255, 1) 52%,
+      rgba(255, 255, 255, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
 
-		.bg-stripes {
-			position: absolute;
-			z-index: 0;
-			top: 0;
-			width: 50%;
-			height: 100vh;
-			/* animation: slide 1600s linear infinite; */
-			opacity: 0.6;
+  .bg-diag-right .bg-triangle {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+    background: -moz-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.95) 65%,
+      rgba(255, 255, 255, 0.2) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.95) 65%,
+      rgba(255, 255, 255, 0.2) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 48%,
+      rgba(255, 255, 255, 0.95) 50%,
+      rgba(255, 255, 255, 0.65) 60%,
+      rgba(255, 255, 255, 0.65) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
 
-			&.bg-stripes-left {
-				background: url("../images/bg/stripe-left.png") repeat 0px top transparent;
-				left: 0;
-			}
-			&.bg-stripes-right {
-				background: url("../images/bg/stripe-right.png") repeat 0px top transparent;
-				right: 0;
-			}
-		}
-	}
-	
-	.root-menu {
-		font-family: $font-family-code;
-		position: absolute;
-		top: 10px;
-		right: 70px;
+  .bg-diag-left,
+  .bg-diag-right {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    opacity: 1;
+  }
+  .bg-diag-left {
+    left: 0;
+  }
+  .bg-diag-right {
+    right: 0;
+  }
 
-		ul {
-			margin: 0;
-			list-style: none;
-			padding: 0;
-		}
-		li {
-			float: left;
-		
-			a {
-				display: inline-block;
-				padding: 17px 20px;
-				font-size: 14px;
-				text-shadow: 1px 1px 1px white;
+  .bg-stripes-wrap {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    height: 100vh;
 
-				&:hover {
-					text-decoration: none;
-				}
-			}
-		} 
-	}
+    .bg-stripes {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      width: 50%;
+      height: 100vh;
+      /* animation: slide 1600s linear infinite; */
+      opacity: 0.6;
 
-	.root-slogan {
-		font-size: 19px;
-		font-family: $font-family-code;
-		line-height: 30px;
-		margin: 50px 0 10px;
-	}
-
-	.browser-big-submit {
-		margin: 10px 0 0;
-	}
-	
-	.root-by {
-		font-size: 13px;
-		line-height: normal;
-		
-		&:hover span {
-			text-decoration: underline;
-		}
+      &.bg-stripes-left {
+        background: url("../images/bg/stripe-left.png") repeat 0px top
+          transparent;
+        left: 0;
+      }
+      &.bg-stripes-right {
+        background: url("../images/bg/stripe-right.png") repeat 0px top
+          transparent;
+        right: 0;
+      }
     }
-}
+  }
 
-@-webkit-keyframes scroll{
-  100%{
-    background-position:0px 3000px;
+  .root-menu {
+    font-family: $font-family-code;
+    position: absolute;
+    top: 10px;
+    right: 70px;
+
+    ul {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      float: left;
+
+      a {
+        display: inline-block;
+        padding: 17px 20px;
+        font-size: 14px;
+        text-shadow: 1px 1px 1px white;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .root-slogan {
+    font-size: 19px;
+    font-family: $font-family-code;
+    line-height: 30px;
+    margin: 50px 0 10px;
+  }
+
+  .browser-big-submit {
+    margin: 10px 0 0;
+  }
+
+  .root-by {
+    font-size: 13px;
+    line-height: normal;
+
+    &:hover span {
+      text-decoration: underline;
+    }
   }
 }
 
-@-moz-keyframes scroll{
-  100%{
-    background-position:0px 3000px;
+@-webkit-keyframes scroll {
+  100% {
+    background-position: 0px 3000px;
   }
 }
 
-@-o-keyframes scroll{
-  100%{
-    background-position:0px 3000px;
+@-moz-keyframes scroll {
+  100% {
+    background-position: 0px 3000px;
   }
 }
 
-@-ms-keyframes scroll{
-  100%{
-    background-position:0px 3000px;
+@-o-keyframes scroll {
+  100% {
+    background-position: 0px 3000px;
   }
 }
 
-@keyframes scroll{
-  100%{
-    background-position:0px 3000px;
+@-ms-keyframes scroll {
+  100% {
+    background-position: 0px 3000px;
   }
 }
 
-@keyframes slide{
-  0%{
+@keyframes scroll {
+  100% {
+    background-position: 0px 3000px;
+  }
+}
+
+@keyframes slide {
+  0% {
     transform: translate3d(0, 0, 0);
   }
-  100%{
+  100% {
     transform: translate3d(0, -5000px, 0);
   }
 }
 
-@media screen and (max-width: 900px){
-	body.home {
-		.main-header-inner {
-			min-height: 68px;
-		}
-		.header-right {
-			border-top: none;
-		}
-		.root-menu {
-			top: 6px;
-		}
-	}
+@media screen and (max-width: 900px) {
+  body.home {
+    .main-header-inner {
+      min-height: 68px;
+    }
+    .header-right {
+      border-top: none;
+    }
+    .root-menu {
+      top: 6px;
+    }
+  }
 }
 
-@media screen and (max-width: 450px){
-	body.home {
-		.root-menu {
-			display: none;
-		}
-		.main-header {
-			position: absolute;
-			top: 0;
-			right: 0;
-			left: 0;
-		}
-		.bg-diag-left, .bg-diag-right {
-			top: -600px;
-		}
-	}
+@media screen and (max-width: 450px) {
+  body.home {
+    .root-menu {
+      display: none;
+    }
+    .main-header {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+    .bg-diag-left,
+    .bg-diag-right {
+      top: -600px;
+    }
+  }
 }
 
-
-@media screen and (max-width: 450px){
-	body.home .main-body {	
-		padding-top: 50px;
-	}
+@media screen and (max-width: 450px) {
+  body.home .main-body {
+    padding-top: 50px;
+  }
 }
-
-
-
-

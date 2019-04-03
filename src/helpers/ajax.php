@@ -1,7 +1,7 @@
 <?php
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,7 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */ 
 
-namespace StateMapper;
+namespace St4teMapper;
 
 
 function handle_ajax(){
@@ -25,7 +25,7 @@ function handle_ajax(){
 	if (!empty($_POST['action']) && preg_match('#^[a-z0-9_]+$#i', $_POST['action'])){
 		define('IS_AJAX', true);
 		
-		$fn = '\\StateMapper\\smap_ajax_'.preg_replace_callback('#[A-Z]#', function($m){
+		$fn = '\\St4teMapper\\smap_ajax_'.preg_replace_callback('#[A-Z]#', function($m){
 			return '_'.strtolower($m[0]);
 		}, $_POST['action']);
 		

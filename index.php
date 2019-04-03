@@ -1,7 +1,7 @@
 <?php
 /*
- * StateMapper: worldwide, collaborative, public data reviewing and monitoring tool.
- * Copyright (C) 2017-2018  StateMapper.net <statemapper@riseup.net>
+ * St4teMapper: worldwide, collaborative, public data reviewing and monitoring tool.
+ * Copyright (C) 2017-2018  Salvador.h <salvador.h.1007@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -17,7 +17,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */ 
  
-namespace StateMapper;
+namespace St4teMapper;
 
 @session_start();
 define('SMAP_VERSION', '1.4a');
@@ -66,7 +66,7 @@ else
 	define('REAL_BASE_URL', BASE_URL);
 
 define('APP_URL', REAL_BASE_URL.'src');
-define('PROD_APP_URL', 'https://statemapper.net/src');
+define('PROD_APP_URL', 'https://github.com/Salvelop07/St4teMapper/tree/master/src');
 define('ASSETS_URL', REAL_BASE_URL.'src/assets');
 define('SCHEMAS_PATH', BASE_PATH.'/schemas');
 define('SCHEMAS_URL', REAL_BASE_URL.'schemas');
@@ -86,7 +86,7 @@ define('SEPARATOR_AND', 1);
 define('SEPARATOR_OR', 2);
 
 // project constants
-define('SMAP_GITHUB_REPOSITORY', 'StateMapper/StateMapper');
+define('SMAP_GITHUB_REPOSITORY', 'St4teMapper/St4teMapper');
 
 // image sizes
 define('IMAGE_SIZE_TINY', 30);
